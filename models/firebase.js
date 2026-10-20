@@ -1,6 +1,6 @@
 const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore } = require('firebase-admin/firestore');
-const serviceAccount = require('../fb-key.json'); // Certifique-se de que o caminho está correto
+const serviceAccount = require('../firebase-key.json'); // Certifique-se de que o caminho está correto
 
 initializeApp({
   credential: cert(serviceAccount)
