@@ -1,0 +1,37 @@
+<nav class="breadcrumb">
+    <a href="/">Início</a> / <a href="/materiais">Materiais</a> / registro {{registro.id}}
+</nav>
+
+<div class="layout-detalhe">
+    <div class="painel-principal">
+        <h1>{{registro.titulo}}</h1>
+        
+        <div class="campo-detalhe">
+            <strong>Título</strong>
+            <span>{{registro.titulo}}</span>
+        </div>
+        <div class="campo-detalhe">
+            <strong>Disciplina</strong>
+            <span>{{registro.disciplina}}</span>
+        </div>
+        <div class="campo-detalhe">
+            <strong>Tipo</strong>
+            <span>{{registro.tipo}}</span>
+        </div>
+        <div class="campo-detalhe">
+            <strong>Data</strong>
+            <span>{{formatarData registro.data}}</span>
+        </div>
+        <div class="campo-detalhe">
+            <strong>Descrição</strong>
+            <p>{{registro.descricao}}</p>
+        </div>
+    </div>
+
+    <aside class="painel-lateral">
+        <h2>Informação principal</h2>
+        <span class="badge-tipo-destaque">{{registro.tipo}}</span>
+        <p>O destaque lateral varia conforme o domínio.</p>
+        <a href="/materiais" class="btn-secundario btn-bloco">Voltar para a lista</a>
+    </aside>
+</div>

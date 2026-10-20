@@ -1,0 +1,18 @@
+<div class="faixa-destaque">
+    <h1>Painel de materiais de estudo</h1>
+    <p>Acompanhe informações, destaques e registros recentes.</p>
+    <a href="/materiais" class="btn-primario">Acessar Lista</a>
+</div>
+
+<section class="secao-destaques">
+    <h2>Destaques do portal</h2>
+    <div class="grade-destaques">
+        {{#each destaques}}
+            <div class="card-destaque">
+                <h3>{{this.titulo}}</h3>
+                <p>Material em destaque</p>
+                <a href="/materiais/{{this.id}}" class="btn-secundario">Ver detalhes</a>
+            </div>
+        {{/each}}
+    </div>
+</section>

@@ -1,0 +1,14 @@
+<div class="cabecalho-listagem">
+    <h2>Materiais cadastrados</h2>
+    <span class="badge-contador">{{registros.length}} registros</span>
+</div>
+
+<div class="lista-materiais">
+    {{#if registros.length}}
+        {{#each registros}}
+            {{> componente-materiais-estudo}}
+        {{/each}}
+    {{else}}
+        <p class="mensagem-vazia">Nenhum registro foi encontrado.</p>
+    {{/if}}
+</div>
