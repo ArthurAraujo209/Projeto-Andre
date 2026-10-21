@@ -1,3 +1,4 @@
 node_modules/
+chaves.txt
 firebase-key.json
 database.sqlite
